@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, useNavigate, Route, Routes } from "react-router-dom";
+import { useNavigate, Route, Routes } from "react-router-dom";
 import { auth } from "./firebase";
 
 import Signup from "./containers/Signup";

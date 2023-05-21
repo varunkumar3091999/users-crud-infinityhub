@@ -15,7 +15,7 @@ const SignUp = () => {
   const handleSignUp = (e) => {
     e.preventDefault();
 
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       setPasswordMatchErr(true);
       return;
     }

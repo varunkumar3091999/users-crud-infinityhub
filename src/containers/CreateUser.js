@@ -3,11 +3,9 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import SuccessAlert from "../components/SuccessAlert";
-import { auth } from "../firebase";
 
 const CreateUser = () => {
   const [showModal, setShowModal] = useState(false);
-  const user = auth.currentUser;
 
   // const params
 

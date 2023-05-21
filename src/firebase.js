@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 // import "dotenv/config";
 
@@ -9,7 +8,6 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-console.log(process.env);
 const firebaseConfig = {
   // apiKey: "AIzaSyCGp_i3irEFdK6FbCHigX2UlEuYhbtC3cs",
   apiKey: process.env.REACT_APP_API_KEY,

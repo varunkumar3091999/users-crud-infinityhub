@@ -1,5 +1,4 @@
-import { auth } from "../firebase";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 import { useEffect, useState } from "react";
@@ -9,8 +8,6 @@ const Home = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   // const [authenticated, setAuthenticated] = useState(false);
-  const navigate = useNavigate();
-  const user = auth.currentUser;
 
   useEffect(() => {
     setLoading(true);
